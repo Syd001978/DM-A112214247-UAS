@@ -1,4 +1,4 @@
-# Klasifikasi Status Obesitas Menggunakan Decision Tree
+# Klasifikasi Tingkat Obesitas Berdasarkan Kebiasaan Makan dan Kondisi Fisik Menggunakan Decision Tree
 ##### Muhammad Sholahuddin Rasyid
 ##### A11.2022.14247
 ##### DM-4504
@@ -8,7 +8,7 @@ Projek ini ditujukan untuk memenuhi tugas UAS mata kuliah Data-Mining, projek Kl
 Ketertarikan pada topik  dimulai ketika saya hendak mencari dataset yang berhubungan dengan gaya hidup manusia. Kemudian munculah beberapa hasil pencarian yang salah satu nya adalah ‘Estimation of Obesity Levels Based On Eating Habits and Physical Condition’. Sebuah dataset dari archive.ics.uci.edu, yang membicarakan Tingkat Obesitas berdasarkan gaya makan dan kondisi fisik seseorang. Terdiri dari 17 atribut yang tentunya berkaitan dengan Kebiasaan makan dan kondisi fisik seperti pola makan, kegiatan sehari-hari seseorang. Yang nantinya berdasarkan data dari atribut tersebut, dapat diidentifikasi Tingkat Obesitas dari seseorang.
 
 ## Permasalahan dan Harapan
-Mengingat obesitas dapat menyebabkan berbagai masalah kesehatan dan dapat mempengaruhi keseharian. Project kali ini mencoba mengatasi permasalahan tersebut dengan membuat model klasifikasi berdasarkan data kebiasaan makan dan kondisi fisik seseorang. Dengan tujuan model dapat mengklasifikasi tingkat obesitas seseorang secara akurat, dengan harapan dapat memberikan informasi berharga yang dapat mendorong seseorang untuk melakukan perubahan gaya hidup, dan pada akhirnya, mendukung upaya pencegahan obesitas yang lebih efektif.
+Mengingat obesitas dapat menyebabkan berbagai masalah kesehatan dan dapat mempengaruhi keseharian. Project kali ini mencoba mengatasi permasalahan tersebut dengan membuat model klasifikasi berdasarkan data kebiasaan makan dan kondisi fisik seseorang. Dengan tujuan model dapat mengklasifikasi tingkat obesitas seseorang secara akurat, dengan harapan dapat memberikan informasi berharga berupa indikasi level obesitas tertentu yang dapat mendorong seseorang untuk melakukan perubahan gaya hidup, dan pada akhirnya, mendukung upaya pencegahan obesitas yang lebih efektif.
 
 ## Dataset
 Data diambil dari UC Irvine Repository yang dimana data ini digunakan untuk mengestimasi tingkat obesitas pada individu dari negara Meksiko, Peru dan Kolombia, berdasarkan kebiasaan makan dan kondisi fisik mereka.
@@ -19,7 +19,7 @@ Dataset memiliki 17 Atribut dan 2111 record data, dimana 16 atribut sebagai fitu
 Atribut-atribut yang terkait dengan kebiasaan makan kebiasaan makan adalah: 
 - Frekuensi seberapa banyak konsumsi makanan berkalori tinggi (FAVC),
 - Frekuensi seberapa banyak konsumsi sayuran(FCVC),
-- Jumlah kali makan per hari (NCP),
+- Jumlah berapa kali makan per hari (NCP),
 - Konsumsi makanan di antara waktu makan (CAEC),
 - Konsumsi air setiap hari (CH20), 
 - Konsumsi alkohol (CALC).
@@ -113,7 +113,9 @@ hasil yang lebih detail terdapat pada file DM-Modelling-Decision Tree.ipynb
 
 
 ### Kesimpulan 
-Modeling decision tree untuk Klasifikasi Status Obesitas, berhasil dilakukan dengan mendapatkan nilai akurasi tertinggi yakni 94.80%. model tersebut adalah model yang dilakukan feature selection sebelumnya, karena mungkin kompleksitas fitur sangat berpengaruh terhadap akurasi model dalam memprediksi kelas obesitas. jika dilihat dari kasat mata pengguna dari ke-16 fitur yang ada sangat mungkin digunakan untuk mengklasifikasi(mengidentifikasi), apakah seseorang
+Modeling decision tree untuk Klasifikasi Status Obesitas, berhasil dilakukan dengan mendapatkan nilai akurasi tertinggi yakni 94.80%. model tersebut adalah model yang dilakukan feature selection sebelumnya, karena mungkin kompleksitas fitur sangat berpengaruh terhadap akurasi model dalam memprediksi kelas obesitas. jika dilihat dari kasat mata pengguna dari ke-16 fitur yang ada sangat mungkin digunakan untuk mengklasifikasi(mengidentifikasi) seseorang tergolong level obesitas seperti apa. fitur yang terpilih dan digunakan untuk training model dt_2, juga masih sangat relevan dengan faktor-faktor penyebab obesitas karena meliput Gender, Umur, Tinggi Badan, Berat badan, Frekuensi seberapa banyak konsumsi makanan berkalori tinggi, Jumlah berapa kali makan per hari, Konsumsi makanan lain di antara waktu makan utama, hingga Frekuensi aktivitas fisik.
+
+Sehingga nantinya jika akan dibuat suatu alat/produk prediksi menggunakan model ini, pengguna dapat dengan nyaman tanpa kebingungan dalam memasukkan value untuk memprediksi kelas obesitas yang ada, pada alat/produk tersebut.
 
 
 ### Referensi 
